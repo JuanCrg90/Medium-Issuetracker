@@ -1,5 +1,4 @@
 <template name="InsertIssue">
-  <div class="insert-issue">
-    <h1>Find me in app/client/templates/insert_issue/insert_issue</h1>
-  </div>
+  <h1>Create New Issue</h1>
+  {{> quickForm collection="Issues" id="insertIssueForm" type="insert" omitFields="createdBy" buttonContent="Create"}}
 </template>

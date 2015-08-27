@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* IssueList: Event Handlers */
+/* IssuesList: Event Handlers */
 /*****************************************************************************/
-Template.IssueList.events({
+Template.IssuesList.events({
 });
 
 /*****************************************************************************/
-/* IssueList: Helpers */
+/* IssuesList: Helpers */
 /*****************************************************************************/
-Template.IssueList.helpers({
+Template.IssuesList.helpers({
 });
 
 /*****************************************************************************/
-/* IssueList: Lifecycle Hooks */
+/* IssuesList: Lifecycle Hooks */
 /*****************************************************************************/
-Template.IssueList.onCreated(function () {
+Template.IssuesList.onCreated(function () {
 });
 
-Template.IssueList.onRendered(function () {
+Template.IssuesList.onRendered(function () {
 });
 
-Template.IssueList.onDestroyed(function () {
+Template.IssuesList.onDestroyed(function () {
 });

@@ -6,6 +6,7 @@ IssuesController = RouteController.extend({
   // this.subscribe('item', this.params._id).wait();
   
   subscriptions: function() {
+    this.subscribe('issues', Meteor.userId());
   },
   
   // Subscriptions or other things we want to "wait" on. This also
@@ -24,6 +25,15 @@ IssuesController = RouteController.extend({
   
   data: function () {
   },
+  insert: function () {
+    this.render('InsertIssue', {});
+  },
+  list: function() {
+    this.render('IssuesList', {});
+  },
+  edit: function() {
+    this.render('EditIssue', {});
+  }
   
   // You can provide any of the hook options
   
