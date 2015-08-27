@@ -1,26 +1,32 @@
+Router.configure({
+  layoutTemplate: 'MasterLayout',
+  loadingTemplate: 'Loading',
+  notFoundTemplate: 'NotFound'
+});
+
  Router.route('/', {
  	name: 'home',
  	controller: 'HomeController',
  	where: 'client'
  });
 
- Router.route('insert_issue', {
+ Router.route('/insert_issue', {
  	name: 'insertIssue',
- 	controller: 'InsertIssueController',
+ 	controller: 'IssuesController',
  	action: 'insert',
  	where: 'client'
  });
 
- Router.route('issues_list', {
+ Router.route('/issues_list', {
  	name: 'issuesList',
- 	controller: 'IssuesListController',
+ 	controller: 'IssuesController',
  	action: 'list',
  	where: 'client'
  });
 
  Router.route('/issues/:_id', {
- 	name: 'issues:Id',
- 	controller: ':IdController',
+ 	name: 'editIssue',
+ 	controller: 'IssuesController',
  	action: 'edit',
  	where: 'client'
  });
@@ -36,4 +42,4 @@
  	}
  };
 
- Router.onBeforeAction(IR_BeforeHooks.logged, {only: ['issuesList', 'insertIssue']});
+Router.onBeforeAction(IR_BeforeHooks.logged, {only: ['issuesList', 'insertIssue']});

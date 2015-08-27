@@ -3,25 +3,25 @@ Issues = new Mongo.Collection('issues');
 Issues.attachSchema(new SimpleSchema({
   title:{
     type: String,
-    label: “Title”,
+    label: "Title",
     max: 200
   },
   description:{
     type: String,
-    label: “Description”,
+    label: "Description",
     max: 1024
   },
   dueDate:
   {
     type: Date,
-    label: “Due Date”,
+    label: "Due Date",
     optional: true
   },
   priority:
   {
     type: String,
-    label: “Priority”,
-    allowedValues: [‘High’, ‘Medium’, ‘Low’],
+    label: "Priority",
+    allowedValues: ['High', 'Medium', 'Low'],
     optional: true
   },
   createdBy: {

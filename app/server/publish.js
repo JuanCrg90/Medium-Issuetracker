@@ -1,4 +1,4 @@
 
-Meteor.publish(‘issues’, function (userId) {
+Meteor.publish('issues', function (userId) {
 	return Issues.find({createdBy: userId});
 });

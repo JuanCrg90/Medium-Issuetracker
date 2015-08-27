@@ -24,6 +24,7 @@ IssuesController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
   
   data: function () {
+    return Issues.findOne({_id: this.params._id});
   },
   insert: function () {
     this.render('InsertIssue', {});
@@ -33,7 +34,7 @@ IssuesController = RouteController.extend({
   },
   edit: function() {
     this.render('EditIssue', {});
-  }
+  },
   
   // You can provide any of the hook options
   
